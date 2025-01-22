@@ -39,14 +39,105 @@ header .img_perfil{
 }
 .bio{
     background-color: gray;
-    height: 50px;
-   
+    height: 300px;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bio .info{
+    width: 60%;
+    height: 100%;
+}
+.bio .info p{
+    color: white;
+    text-align: justify;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12pt;
+}
+.bio .links{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 300px 0 300px 0;
+}
+.bio .links .cv{
+    height: 30px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #00AAFF;
+    box-shadow: 0px 4px 6px #00AAFF;
+    justify-content: center;
+}
+.bio .links .cv a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11pt;
+}
+.bio .links .sociais{
+    width: 180px;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.bio .links .sociais .itens{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.bio .links .sociais .itens .social_item{
+    height: 45px;
+    width: 45px;
+    border: 2px solid #00AAFF;
+    box-shadow: 0px 0px 6px #00AAFF;
+    border-radius: 50%;
 }
 .skils{
     background-color: yellow;
-    height: 50px;
-   
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 100px 0 100px;
 }
+.skils .carousel-container {
+    width: 100%; /* Ocupa toda a largura da tela */
+    overflow: hidden; /* Oculta os itens que saem do contêiner */
+    position: relative;
+    background-color: yellow; /* Cor de fundo para teste */
+}
+  
+.skils .carousel-track {
+    display: flex; /* Alinha os itens em uma linha */
+    transition: transform 0.5s ease-in-out; /* Animação suave ao mover */
+    width: max-content; /* Para conter todos os itens */
+}
+  
+.skils .carousel-item {
+    flex: 0 0 calc(100% / 7); /* Cada item ocupa 1/7 da largura visível */
+    text-align: center;
+    padding: 20px;
+    background: #00AAFF;
+    color: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    margin: 0; /* Remove margens para evitar problemas de layout */
+    border-radius: 50%; /* Forma circular */
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+  
 .projetos{
     background-color: green;
     height: 150px;
