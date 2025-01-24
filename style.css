@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
 body{
     margin: 0;
     padding: 0;
@@ -16,6 +17,12 @@ nav a{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
+    transition: all 0.3s ease-in-out; /* Suaviza a transição */
+}
+nav a:hover{
+    text-decoration: underline; /* Adiciona sublinhado */
+    text-decoration-color: #00AAFF; /* Cor do sublinhado */
+    color: #00AAFF; /* Cor do texto ao passar o mouse */
 }
 header{
     background-color: black;
@@ -32,37 +39,38 @@ header .perfil{
     color: white; 
     height: 100px;
 }
-header .img_perfil{
-    border-radius: 50%;
-    background-color: gray;
+header img{
     height: 300px;
     width: 300px;
 }
 header .perfil h1{
     color: #00AAFF;
     margin: 5px 0;
+    font-family: 'Jersey 25';
+    font-size: 2.5em;
+    letter-spacing: 3px;
 }
 header .perfil p{
     margin: 0;
+    font-family: 'JetBrains Mono';
 }
 .bio{
     background-color: black;
     height: 300px;
-    padding: 100px;
+    padding: 60px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .bio .info{
-    width: 60%;
+    width: 80%;
     height: 100%;
 }
 .bio .info p{
     color: white;
     text-align: justify;
-    font-family: Arial, Helvetica, sans-serif;
     font-size: 12pt;
-    letter-spacing: 1px;
+    font-family: 'JetBrains Mono';
 }
 .bio .links{
     width: 30%;
@@ -87,6 +95,7 @@ header .perfil p{
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 11pt;
+    font-family: 'JetBrains Mono';
 }
 .bio .links .sociais{
     width: 180px;
@@ -109,6 +118,9 @@ header .perfil p{
     border: 2px solid #00AAFF;
     box-shadow: 0px 0px 6px #00AAFF;
     border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .skils{
     background-color: black;
@@ -119,8 +131,11 @@ header .perfil p{
     justify-content: center;
     /*padding: 0 100px;*/
 }
-.skils h2{
-    color: #fff;
+.skils h1{
+    color: #00aaff;
+    font-family: 'Jersey 25';
+    letter-spacing: 3px;
+    font-size: 2.5em;
 }
 .skils .carousel-track {
     display: flex; /* Alinha os itens em uma linha */
@@ -159,15 +174,24 @@ header .perfil p{
     justify-content: space-around;
     margin-top: 20px;
 }
-.projetos h2{
+.projetos h1{
     margin-bottom: 10px;
-    color: #fff;
+    color: #00aaff;
+    font-family: 'Jersey 25';
+    letter-spacing: 3px;
+    font-size: 2.5em;
 }
 .projetos .menu a{
     text-decoration: none;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 10pt;
+    transition: all 0.3s ease-in-out; /* Suaviza a transição */
+}
+.projetos .menu a:hover{
+    text-decoration: underline; /* Adiciona sublinhado */
+    text-decoration-color: #00AAFF; /* Cor do sublinhado */
+    color: #00AAFF; /* Cor do texto ao passar o mouse */
 }
 .web{
     background-color: black;
