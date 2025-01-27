@@ -194,7 +194,7 @@ header .perfil p{
 }
 .web{
     background-color: black;
-    height: 450px;
+    height: 950px;
     display: flex;
     flex-direction: column;
     align-items: center;
