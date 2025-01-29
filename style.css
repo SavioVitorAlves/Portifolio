@@ -274,7 +274,7 @@ header .perfil p{
 }
 .mobile{
     background-color: black;
-    height: 400px;
+    height: 1000px;
     display: flex;
     flex-direction: column;
     align-items: center;
