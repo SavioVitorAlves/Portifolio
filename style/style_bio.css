@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+.bio{
+    background-color: black;
+    height: 300px;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.bio .info{
+    width: 80%;
+    height: 100%;
+}
+.bio .info p{
+    color: white;
+    text-align: justify;
+    font-size: 12pt;
+    font-family: 'JetBrains Mono';
+}
+.bio .links{
+    width: 30%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    padding: 300px 0 300px 0;
+}
+.bio .links .cv{
+    height: 30px;
+    width: 180px;
+    display: flex;
+    align-items: center;
+    border: 2px solid #00AAFF;
+    box-shadow: 0px 4px 6px #00AAFF;
+    justify-content: center;
+}
+.bio .links .cv a{
+    text-decoration: none;
+    color: white;
+    
+    font-size: 11pt;
+    font-family: 'JetBrains Mono';
+}
+.bio .links .sociais{
+    width: 180px;
+    height: 105px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.bio .links .sociais .itens{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.bio .links .sociais .itens .social_item{
+    height: 45px;
+    width: 45px;
+    border: 2px solid #00AAFF;
+    box-shadow: 0px 0px 6px #00AAFF;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* RESPONSAVIDADE*/
+
+@media screen and (max-width: 1024px) {
+  .bio {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 60px;
+  }
+
+  .bio .info {
+    width: 100%;
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  .bio .links {
+    width: 80%;
+    height: auto;
+    padding: 0;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .bio .links .sociais {
+    height: auto;
+    width: auto;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .bio .links .sociais .itens {
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .bio {
+    padding: 30px 15px;
+  }
+
+  .bio .info p {
+    font-size: 11pt;
+  }
+
+  .bio .links {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .bio .links .cv {
+    width: 150px;
+    height: 28px;
+  }
+
+  .bio .links .cv a {
+    font-size: 10pt;
+  }
+
+  .bio .links .sociais {
+    width: 100%;
+  }
+
+  .bio .links .sociais .itens {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .bio .links .sociais .itens .social_item {
+    width: 40px;
+    height: 40px;
+  }
+}

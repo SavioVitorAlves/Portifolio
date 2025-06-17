@@ -1,0 +1,55 @@
+nav{
+    background-color: black;
+    height: 50px;
+
+    padding: 0 500px 0 500px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav a{
+    text-decoration: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 10pt;
+    transition: all 0.3s ease-in-out; /* Suaviza a transição */
+}
+nav a:hover{
+    text-decoration: underline; /* Adiciona sublinhado */
+    text-decoration-color: #00AAFF; /* Cor do sublinhado */
+    color: #00AAFF; /* Cor do texto ao passar o mouse */
+}
+
+/*  RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px) {
+  nav {
+    padding: 0 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    padding: 0 40px;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+  }
+
+  nav a {
+    font-size: 9pt;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 20px;
+    gap: 10px;
+  }
+
+  nav a {
+    font-size: 10pt;
+  }
+}

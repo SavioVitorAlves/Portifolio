@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Jersey+25&family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+header{
+    background-color: black;
+    height: 500px;
+    padding: 0 200px 0 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .perfil{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    color: white; 
+    height: 100px;
+}
+header img{
+    height: 300px;
+    width: 300px;
+}
+header .perfil h1{
+    color: #00AAFF;
+    margin: 5px 0;
+    font-family: 'Jersey 25';
+    font-size: 2.5em;
+    letter-spacing: 3px;
+}
+header .perfil p{
+    margin: 0;
+    font-family: 'JetBrains Mono';
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1024px) {
+  header {
+    padding: 60px 60px;
+  }
+
+  header .perfil {
+    height: auto;
+    margin-bottom: 30px;
+  }
+
+  header .perfil h1 {
+    font-size: 2em;
+  }
+
+  header img {
+    height: 250px;
+    width: 250px;
+  }
+}
+@media screen and (max-width: 768px) {
+   header {
+    padding: 40px 40px;
+  }
+
+}
+@media screen and (max-width: 600px) {
+  header {
+    padding: 30px 20px;
+  }
+
+  header img {
+    height: 200px;
+    width: 200px;
+  }
+
+  header .perfil h1 {
+    font-size: 1.8em;
+    letter-spacing: 2px;
+  }
+
+  header .perfil p {
+    font-size: 12pt;
+    padding: 0 10px;
+  }
+}
