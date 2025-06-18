@@ -139,13 +139,9 @@
     font-size: 2em;
   }
 
-  .mobile .projeto_item .img {
-    flex-wrap: wrap;
-  }
-
   .mobile .projeto_item .img .img_itens {
-    width: 40%;
-    height: 120px;
+    width: 35%;
+    height: 400px;
   }
 
   .mobile .projeto_item .propriedades h1 {
@@ -169,4 +165,10 @@
   .mobile .projeto_item .propriedades .bottons .botton_item a {
     font-size: 10pt;
   }
+}
+@media screen and (max-width: 430px) {
+  .mobile .projeto_item .img .img_itens {
+      width: 35%;
+      height: 250px;
+    }
 }

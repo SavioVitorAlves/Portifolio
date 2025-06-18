@@ -55,16 +55,18 @@
 }
 
 @media screen and (max-width: 600px) {
+  .projetos {
+    height: 80px;
+  }
   .projetos h1 {
     font-size: 1.8em;
     letter-spacing: 2px;
+    margin: 0;
+  }
+  .projetos .menu{
+    margin-top: 5px;
   }
 
-  .projetos .menu {
-    flex-direction: column;
-    align-items: center;
-    gap: 15px;
-  }
 
   .projetos .menu a {
     font-size: 10pt;
